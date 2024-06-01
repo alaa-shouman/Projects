@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.navbar {
+  background-color: blue-700;
+  color: gray-200;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar ul {
+  display: flex; /* Make the list container a flexbox */
+  justify-content: space-between; /* Distribute links evenly */
+}
+
+.navbar a {
+  text-decoration: none;
+  color: inherit; /* Inherit text color from navbar */
+  padding: 0.5rem 1rem;
+  font-weight: bold;
+}
+
+.navbar a:hover {
+  color: blue-500; /* Example hover color (adjust as needed) */
+}

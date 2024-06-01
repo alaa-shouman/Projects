@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #000;
+  --secondary: rgb(24, 24, 27);
+  --border: rgba(63, 63, 70, 0.4);
+  --bgHeader: rgb(39, 39, 42);
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  scroll-behavior: smooth;
+}
+
+.light {
+  --primary: #fff;
+  --secondary: rgb(255, 255, 255);
+  --border: rgba(202, 202, 202, 0.518);
+  --title: rgb(39, 39, 42);
+  --subtitle: rgb(82, 82, 91);
+  --bgHeader: rgb(253, 253, 253);
+}
+
+body {
+  background-color: var(--primary);
+  color: #fff;
+}
+
+.container {
+  border: 2px var(--border) solid;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--secondary);
+}
+
+.devider {
+  border-bottom: solid 1px var(--border);
+  margin: 3rem 0;
+}
+
+/* main.css */
+
+/* Hide the default scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #333; /* Dark background color for track */
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #555; /* Dark color for handle */
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #777; /* Lighter color on hover */
+}
+
+@media (max-width: 1000px) {
+  .container {
+    width: 90%;
+    padding: 0 1.7rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    width: 98%;
+    padding: 0 1.7rem;
+  }
+}

@@ -1,0 +1,14 @@
+footer.flex ul {
+  box-shadow: none;
+}
+
+footer.flex ul > li:hover {
+  @apply text-blue-500 transition duration-200;
+}
+
+@media (max-width: 800px) {
+  footer.flex {
+    flex-direction: column;
+    gap: 2rem;
+  }
+}

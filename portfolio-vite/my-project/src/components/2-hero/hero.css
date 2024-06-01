@@ -1,0 +1,36 @@
+section .leftSection {
+  flex-grow: 1;
+}
+
+section.hero .avatar {
+  width: 88px;
+  border-radius: 50%;
+  border: 1px solid darkorange;
+  padding: 1px;
+  box-shadow: 2px 2px 40px rgba(203, 200, 200, 0.3) inset;
+}
+
+section.hero h1.title {
+  font-size: 2.85rem;
+  line-height: 3rem;
+}
+section.hero p.sub-title {
+  font-size: 0.9rem;
+  line-height: 1.65rem;
+}
+section.hero .all-icons {
+  font-size: 1.2rem;
+}
+
+section.hero .all-icons .icon:hover {
+  transition: 0.3s;
+  cursor: pointer;
+  font-size: 1.5rem;
+  @apply text-blue-500;
+}
+
+@media (max-width: 1000px) {
+  .animation {
+    display: none;
+  }
+}
